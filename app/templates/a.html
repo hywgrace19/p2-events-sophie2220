@@ -44,7 +44,7 @@
 					<div class="p2-circle bg-yellow"></div>
 					<div class="p2-circle bg-yellow"></div>
 					<div class="p2-circle bg-yellow"></div>
-					<div class="p2-circle bg-orange p2-border"></div>
+					<div class="p2-circle bg-orange p2-border" ></div>
 					<div class="p2-circle bg-orange p2-border"></div>
 					<div class="p2-circle bg-orange"></div>
 					<div class="p2-circle bg-orange"></div>
@@ -64,7 +64,26 @@
 
 <script type="text/javascript">
 	// your solution here
-
+  $('.bg-purple').on('click', () => {
+    $('.bg-purple').hide();
+  });
+  $('.bg-green').on('click', () => {
+    $('.bg-green').hide();
+    $('.bg-blue').hide();
+  });
+  $('.bg-orange.p2-border').on('click', () => {
+    $('.bg-orange.p2-border').hide();
+  });
+  $('#gradient-circle').on('mouseover', () => {
+    $('#gradient-circle').hide();
+  });
+  $('.btn').on('click', () => {
+    $('.bg-purple').show();
+    $('.bg-green').show();
+    $('.bg-blue').show();
+    $('.bg-orange.p2-border').show();
+    $('#gradient-circle').show();
+  });
 </script>
 </body>
 </html>
